@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: face;
+    src: url(../asset/font/IRANSansWeb.ttf);
+} 
+@font-face {
+    font-family: yekan;
+    src: url(../asset/font/Yekan.ttf);
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.li1:hover >ul{
+    display: flex;
+    transition: 0.4s ease-out;
+}
+.hide{
+    display: none;
+    animation-name: slideInDown;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    
+    
+}
+.show{
+    display: flex;
+    transition:all 0.4s ease-in-out;
+    height: 270px;
+  
+}
+.show2{
+    display: flex;
+    transition:all 0.4s ease-in-out;
+    top: 0;
+     animation-delay: 0.4;
+     animation-duration: 0.5s;
+  
+}
+
+@keyframes slideInDown {
+    0%{
+        transform: translateY(-100%);
+        visibility: visible;
+
+    }100%{
+        transform: translateY(0);
+    }
+}
